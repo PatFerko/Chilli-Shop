@@ -1,0 +1,16 @@
+.table-header {
+  font-weight: 800;
+}
+
+.table-row {
+  border-bottom: 1px solid grey;
+  min-height: 3.5rem;
+  align-items: center;
+}
+
+.total-row {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 3.5rem;
+  align-items: center;
+}

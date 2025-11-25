@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  min-height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column; /* vertical layout */
+}
+
+.content {
+  flex: 1; /* take remaining space to push footer down */
+}

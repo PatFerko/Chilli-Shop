@@ -1,0 +1,9 @@
+.item-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}

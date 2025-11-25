@@ -1,0 +1,11 @@
+.hero-section {
+  height: 70vh; /* adjust as needed */
+  background-image: url('/Assests/Images/heroSection.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
