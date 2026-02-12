@@ -5,7 +5,7 @@ Built with **Angular**, **TypeScript**, and **Bootstrap**, it showcases dynamic 
 
 ---
 
-![Alt text](https://imgur.com/a/chillizone-mOFlx8Q)
+![Chillizone Screenshot](https://i.imgur.com/spLoUFe.jpeg)
 
 ---
 
