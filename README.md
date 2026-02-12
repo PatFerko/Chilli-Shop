@@ -82,6 +82,7 @@ Clone the repo:
 ````bash
 git clone https://github.com/PatFerko/Chilli-Shop
 cd chilli-Shop
+npm install
 
 ## Development server
 
