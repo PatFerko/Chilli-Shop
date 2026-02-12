@@ -1,0 +1,15 @@
+.top-bar {
+  background-color: #2f8f2fa2;
+  color: white;
+  font-size: 14px;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: underline;
+}

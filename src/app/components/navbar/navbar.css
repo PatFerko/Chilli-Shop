@@ -7,3 +7,20 @@
 .icon:hover {
   transform: scale(1.2);
 }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  /*width: 100%;*/
+  max-width: 400px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: 2px;
+  font-size: medium;
+  color: rgba(34, 102, 34, 0.851);
+}

@@ -1,6 +1,79 @@
-# FE4Exam3PatriciaFerkova
+# 🌶 Chilli Shop Web Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+A responsive single-page web application for selling chilli products.  
+Built with **Angular**, **TypeScript**, and **Bootstrap**, it showcases dynamic product listings, a shopping cart, and routing with detailed product pages.
+
+---
+
+![Alt text](https://imgur.com/a/chillizone-mOFlx8Q)
+
+---
+
+## 🚀 Overview
+
+- Browse products and view detailed information
+- Add products to a shared shopping cart
+- Responsive design using Bootstrap
+- Dynamic routing and route parameters
+- Component-based architecture with Angular services
+
+---
+
+## 🛠 Tech Stack
+
+- **Angular**
+- **TypeScript**
+- **Bootstrap 5**
+- **HTML5 / CSS3**
+- **JSON** for product data
+
+---
+
+## ⚡ Features
+
+- **Home Page** – Highlights featured products
+- **Product List** – Displays all available chillis
+- **Product Detail Page** – Dynamic route `/detailPage/:id` with detailed product info and “Add to Cart”
+- **Shopping Cart** – Add/remove products, shared state across components
+- **About Us & Products/Services Pages** – Static informational content
+- **Responsive Layout** – Works across multiple screen sizes
+
+---
+
+## 🏗 Architecture & Design
+
+- **Component-based design** for modular UI
+- **Routing** for navigation, including dynamic routes
+- **Singleton service (`ProductCartService`)** for shared cart state
+- **TypeScript models** ensure consistent product data
+- **Bootstrap** for layout, spacing, and responsive design
+
+---
+
+## 📌 Key Implementation
+
+### Product Detail Page
+
+- Loads product dynamically using route parameters
+- Displays image, name, rating, description, and price
+- Add-to-cart functionality via shared cart service
+
+### Cart Service
+
+- Singleton service provided at root
+- Stores current cart items
+- Methods: `addProduct(product)` and `removeProduct(productId)`
+- Ensures multiple components share the same cart state
+
+---
+
+## 🔧 Setup & Usage
+
+Clone the repo:
+
+````bash
+git clone https://github.com/PatFerko/Chilli-Shop
+cd chilli-Shop
 
 ## Development server
 
@@ -8,7 +81,7 @@ To start a local development server, run:
 
 ```bash
 ng serve
-```
+````
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 

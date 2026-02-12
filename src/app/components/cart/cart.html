@@ -1,54 +1,54 @@
 <div class="container">
-  <h1 class="mt-3">Cart items</h1>
+  <h2 class="mt-3">Cart items</h2>
   @if (products.length === 0) {
-  <h1 style="color: red">Your Cart is Empty</h1>
+    <h3 style="color: red">Your Cart is Empty</h3>
   } @else {
-  <div class="row table-row">
-    <div class="col-lg-2">
-      <div class="d-flex justify-content-center table-header">
-        <div>#</div>
+    <div class="row table-row">
+      <div class="col-lg-2">
+        <div class="d-flex justify-content-center table-header">
+          <div>#</div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center table-header">
+          <div>name</div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="d-flex justify-content-center table-header">
+          <div>price</div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center table-header">
+          <div>Action</div>
+        </div>
       </div>
     </div>
-    <div class="col-lg-4">
-      <div class="d-flex justify-content-center table-header">
-        <div>name</div>
+    @for (product of products; track $index) {
+      <div class="row table-row">
+        <div class="col-lg-2">
+          <div class="d-flex justify-content-center">
+            <div>{{ $index + 1 }}</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-center">
+            <div>{{ product.name }}</div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="d-flex justify-content-center">
+            <div>{{ product.price }}</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-center">
+            <div class="btn btn-outline-danger" (click)="removeProduct(product.id)">Remove</div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-2">
-      <div class="d-flex justify-content-center table-header">
-        <div>price</div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="d-flex justify-content-center table-header">
-        <div>Action</div>
-      </div>
-    </div>
-  </div>
-  @for (product of products; track $index) {
-  <div class="row table-row">
-    <div class="col-lg-2">
-      <div class="d-flex justify-content-center">
-        <div>{{ $index + 1 }}</div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="d-flex justify-content-center">
-        <div>{{ product.name }}</div>
-      </div>
-    </div>
-    <div class="col-lg-2">
-      <div class="d-flex justify-content-center">
-        <div>{{ product.price }}</div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="d-flex justify-content-center">
-        <div class="btn btn-outline-danger" (click)="removeProduct(product.id)">Remove</div>
-      </div>
-    </div>
-  </div>
-  }
-  <div class="total-row">Total: {{ totalAmount }}</div>
+    }
+    <div class="total-row">Total: {{ totalAmount }}</div>
   }
 </div>
