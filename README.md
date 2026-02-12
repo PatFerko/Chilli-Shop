@@ -40,6 +40,10 @@ Built with **Angular**, **TypeScript**, and **Bootstrap**, it showcases dynamic 
 
 ---
 
+![Chillizone Screenshot](https://i.imgur.com/gJkNzIw.png)
+
+---
+
 ## 🏗 Architecture & Design
 
 - **Component-based design** for modular UI
@@ -64,6 +68,10 @@ Built with **Angular**, **TypeScript**, and **Bootstrap**, it showcases dynamic 
 - Stores current cart items
 - Methods: `addProduct(product)` and `removeProduct(productId)`
 - Ensures multiple components share the same cart state
+
+---
+
+![Chillizone Screenshot](https://i.imgur.com/MChrxv8.png)
 
 ---
 
